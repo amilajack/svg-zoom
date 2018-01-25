@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps"
   },
-  "dependencies": {
+  "peerDependencies": {
     "d3": "^4.12.2"
   }
 }
