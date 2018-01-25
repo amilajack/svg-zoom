@@ -2,7 +2,7 @@
   "presets": [
     ["env", {
       "targets": {
-        "node": 6
+        "safari": 11
       },
       "modules": "umd"
     }],
