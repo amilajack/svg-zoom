@@ -1,5 +1,5 @@
 {
-  "name": "d3-svg-zoom",
+  "name": "svg-zoom",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Amila Welihinda <amilajack@gmail.com>",
@@ -12,8 +12,9 @@
     "eslint-config-bliss": "^1.0.20"
   },
   "scripts": {
+    "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps",
     "lint": "eslint .",
-    "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps"
+    "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"
   },
   "peerDependencies": {
     "d3": "^4.12.2"
