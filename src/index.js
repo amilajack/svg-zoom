@@ -11,7 +11,7 @@ function zoom() {
   g.attr('transform', d3.event.transform);
 }
 
-d3.xml('tiger.svg').mimeType('image/svg+xml').get((error, xml) => {
+d3.xml('example.svg').mimeType('image/svg+xml').get((error, xml) => {
   if (error) {
     console.log(error);
   } else {

@@ -9,10 +9,12 @@
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.1.3",
     "eslint": "^4.16.0",
-    "eslint-config-bliss": "^1.0.20"
+    "eslint-config-bliss": "^1.0.20",
+    "http-server": "^0.11.1"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps",
+    "example": "http-server .",
     "lint": "eslint .",
     "test": "npm run lint && npm run build",
     "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"

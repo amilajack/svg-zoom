@@ -1,5 +1,37 @@
 <html>
+  <link rel="stylesheet" href="https://unpkg.com/graphql-voyager@1.0.0-rc.11/dist/voyager.css">
   <svg width="960" height="500"></svg>
   <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="../lib/index.js" />
+  <!-- <script src="../lib/index.js" /> -->
+  <script>
+  document.body.appendChild(document.createElement('svg'));
+
+const svg = d3.select('svg');
+const width = +svg.attr('width');
+const height = +svg.attr('height');
+const g = svg.append('g');
+
+function zoom() {
+  g.attr('transform', d3.event.transform);
+}
+
+d3.xml('example.svg').mimeType('image/svg+xml').get((error, xml) => {
+  if (error) {
+    console.log(error);
+  } else {
+    document.body.appendChild(xml.documentElement);
+
+    g.append(() => document.querySelector('#svg2'));
+
+    svg.append('rect')
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all')
+      .attr('width', width)
+      .attr('height', height)
+      .call(d3.zoom()
+        .scaleExtent([1, 8])
+        .on('zoom', zoom));
+  }
+});
+</script>
 </html>
