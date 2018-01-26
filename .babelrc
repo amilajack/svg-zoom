@@ -6,6 +6,7 @@
       },
       "modules": "umd"
     }],
-    "stage-0"
+    "stage-0",
+    "flow"
   ]
 }
