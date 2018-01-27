@@ -1,23 +1,22 @@
 // @flow
 import * as d3 from 'd3';
 
-const svg = d3.select('svg');
-const width = +svg.attr('width');
-const height = +svg.attr('height');
-const g = svg.append('g');
-
-export default function SvgZoom(svgPath: string) {
-  function zoom() {
-    g.attr('transform', d3.event.transform);
+export default function SvgZoom(svgPath: string, targetSvgElementSelector: string) {
+  if (!(document.querySelector(targetSvgElementSelector) instanceof SVGElement)) {
+    throw new Error(`"${targetSvgElementSelector}" does not select an SVG element`);
   }
+
+  const svg = d3.select(targetSvgElementSelector);
+  const width = +svg.attr('width');
+  const height = +svg.attr('height');
+  const g = svg.append('g');
 
   d3.xml(svgPath).mimeType('image/svg+xml').get((error, xml) => {
     if (error) {
       console.log(error);
     } else {
-      document.body.appendChild(xml.documentElement);
-
-      g.append(() => document.querySelector('#svg2'));
+      const svgElement = document.body.appendChild(xml.documentElement);
+      g.append(() => svgElement);
 
       svg.append('rect')
         .attr('fill', 'none')
@@ -26,7 +25,9 @@ export default function SvgZoom(svgPath: string) {
         .attr('height', height)
         .call(d3.zoom()
           .scaleExtent([1, 8])
-          .on('zoom', zoom));
+          .on('zoom', () => {
+            g.attr('transform', d3.event.transform);
+          }));
     }
   });
 }
