@@ -1,6 +1,8 @@
 svg-zoom
 ========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amilajack/svg-zoom.svg)](https://greenkeeper.io/)
+
 ## Installation
 ```bash
 npm install svg-zoom --save
