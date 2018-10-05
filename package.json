@@ -22,6 +22,6 @@
     "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"
   },
   "peerDependencies": {
-    "d3": "^4.12.2"
+    "d3": "^4.13.0"
   }
 }
