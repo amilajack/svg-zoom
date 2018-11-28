@@ -1115,9 +1115,9 @@ eslint-config-airbnb-base@^12.1.0:
   dependencies:
     eslint-restricted-globals "^0.1.1"
 
-eslint-config-bliss@^1.0.20:
+eslint-config-bliss@^1.0.21:
   version "1.0.21"
-  resolved "http://registry.npmjs.org/eslint-config-bliss/-/eslint-config-bliss-1.0.21.tgz#260d1034040fa5b651a899e93555092842352084"
+  resolved "https://registry.yarnpkg.com/eslint-config-bliss/-/eslint-config-bliss-1.0.21.tgz#260d1034040fa5b651a899e93555092842352084"
   integrity sha1-Jg0QNAQPpbZRqJnpNVUJKEI1IIQ=
   dependencies:
     babel-eslint "^8.2.2"
