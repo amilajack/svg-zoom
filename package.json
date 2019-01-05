@@ -9,7 +9,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.2.0",
-    "eslint": "^5.11.1",
+    "eslint": "^5.12.0",
     "eslint-config-bliss": "^1.0.21",
     "flow-bin": "^0.89.0",
     "http-server": "^0.11.1"
