@@ -44,3 +44,8 @@ Run the example:
 ```bash
 yarn example
 ```
+
+## Related
+
+* [**d3-zoom**: Pan and zoom SVG, HTML or Canvas using mouse or touch input](https://github.com/d3/d3-zoom)
+* [**svg-pan-zoom**: JavaScript library for panning and zooming an SVG image from the mouse, touches and programmatically](https://github.com/ariutta/svg-pan-zoom)
