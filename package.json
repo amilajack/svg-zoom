@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps",
-    "example": "http-server .",
+    "example": "http-server ./test -o",
     "lint": "eslint .",
     "test": "yarn build",
     "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"
