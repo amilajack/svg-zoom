@@ -1,12 +1,14 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "safari": 11
-      },
-      "modules": "umd"
-    }],
-    "stage-0",
-    "flow"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "safari": 11
+        },
+        "modules": "umd"
+      }
+    ],
+    "@babel/preset-flow"
   ]
 }
