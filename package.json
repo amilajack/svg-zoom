@@ -11,8 +11,10 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
     "cross-env": "^5.2.0",
+    "d3": "^5.9.1",
     "eslint": "^5.12.1",
-    "eslint-config-bliss": "^1.0.21",
+    "eslint-config-bliss": "^3.3.0-0",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
     "flow-bin": "^0.91.0",
     "http-server": "^0.11.1"
   },
