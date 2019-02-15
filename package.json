@@ -5,6 +5,7 @@
   "author": "Amila Welihinda <amilajack@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -19,7 +20,7 @@
     "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps",
     "example": "http-server .",
     "lint": "eslint .",
-    "test": "npm run build",
+    "test": "yarn build",
     "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"
   },
   "peerDependencies": {
