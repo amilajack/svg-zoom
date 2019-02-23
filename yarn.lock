@@ -1542,10 +1542,10 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-bliss@^3.3.0-0:
-  version "3.3.0-0"
-  resolved "https://registry.npmjs.org/eslint-config-bliss/-/eslint-config-bliss-3.3.0-0.tgz#cdcd63b4e4fba915ece52f210dcbbe4df6e15369"
-  integrity sha512-okSZgzFcrOq7c+qV79XqOtySuD+JNiUeNcBN8Nl0n5FgNKzTGSxHbs0EyKtNzcjrnst3qSmJhJGE1yX7BRPVug==
+eslint-config-bliss@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-bliss/-/eslint-config-bliss-3.3.0.tgz#34a2f94f80c707d59d8f108442f3691ce55d2735"
+  integrity sha512-ihJTtRS1D6Je5+7efGdsFIsX06mVByxA7zH+OfGd6hA45msN12CMKOurP8gssBZ5EuSaGAr+iqMXzuateOTy5g==
   dependencies:
     babel-eslint "^10.0.1"
     eslint-config-airbnb-base "^13.1.0"
