@@ -13,7 +13,7 @@
     "cross-env": "^5.2.0",
     "d3": "^5.9.7",
     "eslint": "^5.16.0",
-    "eslint-config-bliss": "^3.4.0",
+    "eslint-config-bliss": "^4.2.0",
     "eslint-plugin-flowtype-errors": "^3.6.0",
     "flow-bin": "^0.98.0",
     "http-server": "^0.11.1"
