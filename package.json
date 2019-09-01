@@ -11,7 +11,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-flow": "^7.0.0",
     "cross-env": "^5.2.1",
-    "d3": "^5.9.7",
+    "d3": "^5.11.0",
     "eslint": "^5.16.0",
     "eslint-config-bliss": "^4.2.0",
     "eslint-plugin-flowtype-errors": "^3.6.0",
@@ -26,6 +26,6 @@
     "watch": "cross-env NODE_ENV=development babel --out-dir lib src --source-maps --watch"
   },
   "peerDependencies": {
-    "d3": "^5.9.7"
+    "d3": "^5.11.0"
   }
 }
