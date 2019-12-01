@@ -16,7 +16,7 @@
     "eslint-config-bliss": "^4.3.0",
     "eslint-plugin-flowtype-errors": "^3.6.0",
     "flow-bin": "^0.108.0",
-    "http-server": "^0.11.1"
+    "http-server": "^0.12.0"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production rm -rf lib && babel -d lib/ src/ --source-maps",
