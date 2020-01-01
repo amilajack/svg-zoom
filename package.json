@@ -14,7 +14,7 @@
     "d3": "^5.15.0",
     "eslint": "^5.16.0",
     "eslint-config-bliss": "^4.6.0",
-    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-flowtype-errors": "^4.1.0",
     "flow-bin": "^0.114.0",
     "http-server": "^0.12.0"
   },
